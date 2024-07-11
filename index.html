@@ -15,11 +15,19 @@
 </head>
 <body >
   <form class="w-[50%] mx-auto mt-[50px] p-5 bg-white rounded-[10px]">
-        <h2 class="text-[25px] font-semibold text-violet-600">Create  Todo</h2>
+    <div class="flex justify-between">
+      <h2 class="text-[25px] font-semibold text-violet-600">Create  Todo</h2>
+      <input type="search" class="search-input w-[30%] p-[5px] outline-none border-[1px] border-violet-300 border-dashed rounded-[12px] text-violet-400 focus:border-violet-500 focus:shadow-lg" placeholder="Search">
+    </div>    
         <div class="flex justify-between mt-[20px]">
-            <input class="w-[72%] p-[12px] outline-none border-[2px] border-violet-300 rounded-[12px] text-violet-400 focus:border-violet-500 focus:shadow-lg" type="text" placeholder="Enter name of your Todo....">
+            <input class="w-[72%] p-[12px] outline-none border-[2px] border-violet-300 rounded-[12px] text-violet-400 focus:border-violet-500 focus:shadow-lg" type="text" placeholder=" Todo....">
             <button class="w-[26%] bg-blue-500 rounded-[12px] text-white font-semibold" type="submit">Submit</button>
         </div>
+      <label class="py-5 pl-3 inline-block">
+        <input type="file" class="choose-input hidden">
+        <img src="./img/choose.png" alt="img" class="choose-img" width="100" height="50">
+      </label>
+
     </form>
     <div class="w-[50%] mx-auto mt-[20px] flex justify-between p-5 bg-white rounded-[10px]">
         <button  class="all w-[25%] p-[15px] bg-blue-500 rounded-[12px] text-white font-semibold" type="submit">All(<span id="all">0</span>)</button>
